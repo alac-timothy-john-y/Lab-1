@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+h1, h2, h3 {
+    color: #003366; 
+    margin-top: 0;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.8rem; border-bottom: 2px solid #006699; padding-bottom: 5px; }
+h3 { font-size: 1.3rem; }
+
+
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #006699; 
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #e6f2ff; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-left: 5px solid #00a8cc; 
+    border-radius: 0 8px 8px 0;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #00a8cc;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    background-color: #00a8cc; 
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005580;
+}
+
+
+
+
+.project-card {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #d1e2f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+.btn-accent {
+    display: inline-block;
+    background-color: #00a8cc; 
+    color: #ffffff !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.btn-accent:hover {
+    background-color: #0088a3;
+}
+
+
+.text-highlight {
+    color: #006699;
+    font-weight: bold;
+}
