@@ -1,0 +1,86 @@
+:root {
+    /* Your Exact Palette Hex Codes */
+    --theme-primary: #014B43;      /* Deep Forest Green (headers) */
+    --theme-secondary: #099078;    /* Vibrant Teal/Green (Accents / Links) */
+    --theme-accent: #9C2113;       /* Rich Crimson Red (Highlights / Important Notes) */
+    --theme-background: #F9ECE5;   /* Soft Cream (Warm Page Background) */
+    --theme-card-bg: #FFD6D1;      /* Delicate Rose Pink (Soft Container Highlights) */
+    --theme-text: #014B43;         /* Deep Forest Green for primary typography readouts */
+}
+
+body {
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Auth Login Page Styling */
+.login-page {
+    background: linear-gradient(135deg, var(--theme-primary), var(--theme-secondary));
+}
+
+.login-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.login-card .card-header {
+    background: var(--theme-primary);
+    border-bottom: none;
+}
+
+.btn-primary {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--theme-accent);
+    border-color: var(--theme-accent);
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #ffffff;
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--theme-primary);
+    color: #ffffff !important;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--theme-card-bg);
+    color: var(--theme-primary);
+}
+
+/* Metric Stat Cards Styling */
+.stat-card {
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: var(--theme-card-bg);
+}
+
+/* Custom left borders using your palette accents */
+.border-primary-custom {
+    border-left: 4px solid var(--theme-primary) !important;
+}
+.border-secondary-custom {
+    border-left: 4px solid var(--theme-secondary) !important;
+}
+.border-accent-custom {
+    border-left: 4px solid var(--theme-accent) !important;
+}
+
+/* Responsive side control */
+@media (max-width: 768px) {
+    .sidebar {
+        border-bottom: 1px solid #e2e8f0;
+    }
+}
